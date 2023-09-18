@@ -1,0 +1,17 @@
+version: '3'
+services:
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+
+  mqtt:
+    image: mqtt:latest
+    ports:
+      - "1883:1883"
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+
